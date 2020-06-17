@@ -42,7 +42,8 @@ def send_text(message):
 					balance = data[n][1]
 		
 		print(message.text, message.chat.username, balance)
-		bot.send_message(message.chat.id, 'Клик засчитан,\nВаш баланс: '+ str(balance))
+		bot.send_message(message.chat.id, 'Клик засчитан,\nВаш баланс:')
+		bot.send_message(message.chat.id, balance)
 
 		data_w = str(data).replace("], ", "\n")
 		data_w = data_w.replace("[", "")
@@ -50,10 +51,9 @@ def send_text(message):
 		data_w = data_w.replace(",", "")
 		data_w = data_w.replace("'", "")
 		dataw = open('data.txt', 'w')
-		print(data_w)
 		dataw.write(data_w)
 		dataw.close()
 	else:
 		bot.send_message(message.chat.id, 'Неизвестная команда')
 
-bot.polling()
+bot.polling(none_stop=True, interval=1)
