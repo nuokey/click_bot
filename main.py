@@ -2,7 +2,7 @@ import telebot
 
 balance = "Ошибка, \nНапишите /start"
 
-bot = telebot.TeleBot('1280076277:AAH67aF5LXmq41J1AzqmCO44YrLL_ehKlEc')
+bot = telebot.TeleBot('TOKEN')
 keyboard1 = telebot.types.ReplyKeyboardMarkup()
 keyboard1.row('Click')
 
