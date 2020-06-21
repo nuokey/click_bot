@@ -1,4 +1,4 @@
-# nuokey_click_bot
+# click_bot | by NuoKey
 Telegram Clicker Bot
 
 Create a bot and take the token. Then replace TOKEN with your token.
